@@ -1,0 +1,858 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>MAESTRO INTELLIGENCE LAB</title>
+    <link href="maestro/styling/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="media/system/css/modal.css" rel="stylesheet" type="text/css">
+    
+    
+    <link href="maestro/styling/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="maestro/styling/css/layout.css" rel="stylesheet" type="text/css">
+    <link href="maestro/styling/css/typography.css" rel="stylesheet" type="text/css">
+    <link href="maestro/styling/css/menus.css" rel="stylesheet" type="text/css">
+    <link href="maestro/styling/css/modules.css" rel="stylesheet" type="text/css">
+    <link href="maestro/styling/css/system.css" rel="stylesheet" type="text/css">
+    <link href="maestro/styling/css/extensions.css" rel="stylesheet" type="text/css">
+    <link href="maestro/styling/css/style.css" rel="stylesheet" type="text/css">
+    <link href="maestro/styling/css/custom.css" rel="stylesheet" type="text/css">
+    <link href="maestro/styling/css/responsive-calendar.css" rel="stylesheet" type="text/css">
+    
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <script src="maestro/styling/js/template.js" type="text/javascript"></script>
+    <script src="script/j.js" type="text/javascript"></script>
+    <script src="script/swipe.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div class="overlay login">
+    <div class="content">
+        <h2>Please Login to Continue..</h2>
+            <div class="row">
+                <span>Email ID</span>
+                <span><input type="text" class="email"></span>
+            </div>
+            <div class="row">
+                <span>Password</span>
+                <span><input type="password" class="password"></span>
+            </div>
+            <div class="row">
+                <div class="loginNow login">Login</div>
+            </div>
+            <h2></h2>
+            <center><a href="#">Forgot Password</a> | <a href="#" id="RegisterNow">Register Now</a></center>
+        <div class="closeOverlay"></div>
+    </div>
+</div>
+<div class="overlay register">
+    <div class="content">
+        <h2>Register yourself</h2>
+        <div class="row toSend">
+                <span>Name *</span>
+                <span><input type="text" class="name"></span>
+            </div>
+            <div class="row toSend">
+                <span>Email *</span>
+                <span><input type="text" class="email"></span>
+            </div>
+            <div class="row toSend">
+                <span>Mobile *</span>
+                <span><input type="text" class="mobile"></span>
+            </div>
+            <div class="row toSend">
+                <span>Company</span>
+                <span><input type="text" class="company"></span>
+            </div>
+            <div class="row toSend">
+                <span>City</span>
+                <span><select class="city">
+                <option value="" default selected>select ..</option>
+                <option>Bangalore</option>
+                <option>Chennai</option>
+                <option>Hyderabad</option>
+                <option>Delhi</option>
+                <option>Noida</option>
+                <option>Gurgaon</option>
+                <option>Mumbai</option>
+                <option>Pune</option>
+                <option>Others</option>
+                </select></span>
+            </div>
+            <div class="row toSend">
+                <span>Choose Password *</span>
+                <span><input type="password" class="password"></span>
+            </div>
+            <div class="row">
+                <span>Re-type Password *</span>
+                <span><input type="password" class="password1"></span>
+            </div>
+            <div class="row">
+                <div class="loginNow register">Register</div>
+            </div>
+            <h2></h2>
+            <center><a href="#" class="already">Already registered ?</a></center>
+
+        <div class="closeOverlay"></div>
+    </div>
+</div>
+<div class="overlay registerForCourse">
+    <div class="content">
+     <h2>Register for Course Now</h2>
+    	<div style="height:400px; overflow-y:scroll">
+       
+        <b>DETAILS OF THE DELEGATE</b>
+            <div class="row toSend">
+                <span>First Name *</span>
+                <span><input type="text" class="fname"></span>
+            </div>
+            <div class="row toSend">
+                <span>Last Name *</span>
+                <span><input type="text" class="lname"></span>
+            </div>
+            <div class="row toSend">
+                <span>Email *</span>
+                <span><input type="text" class="email"></span>
+            </div>
+            <div class="row toSend">
+                <span>Mobile *</span>
+                <span><input type="text" class="mobile"></span>
+            </div>
+            <div class="row toSend">
+                <span>Company</span>
+                <span><input type="text" class="company"></span>
+            </div>
+            <div class="row toSend">
+                <span>Designation</span>
+                <span><input type="text" class="designation"></span>
+            </div>
+            <div class="row toSend">
+                <span>City</span>
+                <span><input type="text" class="city"></span>
+            </div>
+            <div class="row toSend">
+                <span>State</span>
+                <span><input type="text" class="state"></span>
+            </div>
+            <div class="row toSend">
+                <span>Country</span>
+                <span><input type="text" class="country"></span>
+            </div>
+            <div class="row toSend">
+                <span>Address for Correspondence</span>
+                <span><input type="text" class="address"></span>
+            </div>
+            <div class="row toSend">
+                <span>Postal Code</span>
+                <span><input type="text" class="postal"></span>
+            </div>
+            <b>TRAINING DETAILS</b>
+            
+            <div class="row toSend">
+                <span>Traning Module</span>
+                <span><input type="text" class="Course"></span>
+            </div>
+            <div class="row toSend">
+                <span>Location of Training</span>
+                <span><input type="text" class="Place"></span>
+            </div>
+            <div class="row toSend">
+                <span>Date of Training</span>
+                <span><input type="text" class="Date"></span>
+            </div>
+            <div class="row toSend">
+                <span>Price</span>
+                <span><input type="text" class="Price"></span>
+            </div>
+            <b>Payment Details</b>
+            <div class="row toSend">
+                <span>Payment Details</span>
+                <span><select class="Payment">
+			  <optgroup label="Company Sponsored">
+			    <option value="Purchase Order">Purchase Order - Mention PO Number & Date</option>
+			    <option value="Neft">NEFT (Wire Transfer) - Mention transaction ID</option>
+			    <option value="DD-Check">DD/Cheque Payment - Mention Cheque/DD Details</option>
+			    <option value="Card">Card Payment - Mention Card Details</option>
+			  </optgroup>
+			  <optgroup label="Self Sponsored">
+			    <option value="Purchase Order">Purchase Order - Mention PO Number & Date</option>
+			    <option value="Neft">NEFT (Wire Transfer) - Mention transaction ID</option>
+			    <option value="DD-Check">DD/Cheque Payment - Mention Cheque/DD Details</option>
+			    <option value="Card">Card Payment - Mention Card Details</option>
+			    <option value="Cash">Cash Payment</option>
+			  </optgroup>
+                </select></span>
+            </div>
+            <div class="row toSend">
+                <span>Mention Details </span>
+                <span><input type="text" class="details"></span>
+            </div>
+            <div class="row">
+                <div class="loginNow course">Register</div>
+            </div>
+            
+	</div>
+        <div class="closeOverlay"></div>
+    </div>
+</div>
+<div class="overlay callback">
+    <div class="content">
+        <h2>Request A Callback</h2>
+            <div class="row toSend">
+                <span>Name *</span>
+                <span><input type="text" class="name"></span>
+            </div>
+            <div class="row  toSend">
+                <span>Email *</span>
+                <span><input type="text" class="email"></span>
+            </div>
+            <div class="row  toSend">
+                <span>Company</span>
+                <span><input type="text" class="company"></span>
+            </div>
+            <div class="row  toSend">
+                <span>Designation</span>
+                <span><input type="text" class="designation"></span>
+            </div>
+            <div class="row  toSend">
+                <span>Mobile *</span>
+                <span><input type="text" class="mobile"></span>
+            </div>
+            <div class="row  toSend">
+                <span>City</span>
+                <span><select class="city">
+                <option value="" default selected>select ..</option>
+                <option>Bangalore</option>
+                <option>Chennai</option>
+                <option>Hyderabad</option>
+                <option>Delhi</option>
+                <option>Noida</option>
+                <option>Gurgaon</option>
+                <option>Mumbai</option>
+                <option>Pune</option>
+                <option>Others</option>
+                </select></span>
+            </div>
+            <div class="row  toSend">
+                <span>Interested in *</span>
+                <span><select class="interested">
+                <option value="" default selected>select ..</option>
+                <option>ITIL<sup>reg;</sup> 2011 Foundation</option>
+		<option>ITIL 2011 Service Strategy</option>
+		<option>ITIL 2011 Service Design</option>
+		<option>ITIL 2011 Service Transition</option>
+		<option>ITIL 2011 Service Operation</option>
+		<option>ITIL 2011 Continual Service Improvement</option>
+		<option>ITIL 2011 Operation Support & Analysis (OSA)</option>
+		<option>ITIL 2011 Release Control & Validation (RCV)</option>
+		<option>ITIL 2011 Service Offerings & Agreement (SOA)</option>
+		<option>ITIL 2011 Planning Protection & Optimization (PPO)</option>
+		<option>ITIL 2011 Managing Across the Lifecycle (MALC)</option>
+		<option>ISO/IEC 20000 Foundation</option>
+		<option>ISO/IEC 20000 Auditor</option>
+		<option>ISO/IEC 20000 Practitioner</option>
+		<option>COBIT 5 Foundation</option>
+		<option>COBIT 5 Assessor</option>
+		<option>COBIT 5 Implementer</option>
+		<option>PMP</option><option>CAPM</option>
+		<option>PgMP</option><option>PRINCE 2</option>
+		<option>MSP</option><option>P3O</option>
+		<option>PMI-ACP</option>
+		<option>Certifed Srum Master</option>
+		<option>Six Sigma Yello Belt</option>
+		<option>Six Sigma Green Belt</option>
+		<option>Six Sigma Black Belt</option>
+                </select></span>
+            </div>
+            <div class="row  toSend">
+                <span>Audience *</span>
+                <span><select class="audience">
+                <option value="" default selected>select ..</option>
+                <option>Individual</option>
+                <option>Group</option>
+                </select></span>
+            </div>
+            <div class="row  toSend">
+                <span>Mode *</span>
+                <span><select class="mode">
+                <option value="" default selected>select ..</option>
+                <option>Open House</option>
+                <option>Corporate</option>                
+                </select></span>
+                
+            </div>
+            <div class="row  toSend">
+                <span>Delivery *</span>
+                <span><select class="delivery">
+                <option value="" default selected>select ..</option>
+                <option>Classroom</option>
+                <option>Live Virtual</option>
+                
+                </select></span>
+            </div>
+            <div class="row toSend">
+                <span>Best Time to Call*</span>
+                <span><select class="best">
+                <option value="" default selected>select ..</option>
+                <option>Morning</option>
+                <option>Afternoon</option>
+                <option>Evening</option>
+                <option>Anytime</option>
+                
+                </select></span>
+            </div>
+            <div class="row">
+                <div class="loginNow callBack">Request a CallBack</div>
+            </div>
+
+        <div class="closeOverlay"></div>
+    </div>
+</div>
+<style type="text/css">
+.overlay ::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+.overlay ::-webkit-scrollbar-track {
+background: #fff;
+    border-radius: 10px;
+}
+ 
+.overlay ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+background: rgb(255, 130, 15); 
+}
+.overlay b {
+margin: 30px 0;
+text-align: center;
+display: block;
+}
+</style>    <div class="wrapper">
+        <div id="header">
+            <div id="toolbar">
+                <div class="right">
+                    <div class="module mod-blank first last">
+                        <ul class="menu">
+                            <li class="level1 item1 first"><a class="level1 item1 first" href="About-Us"><span class="bg">About us</span></a></li>
+
+                            <li class="level1 item2"><a class="level1 item2" href="Contact-Us"><span class="bg">Contact Us</span></a></li>
+
+                           <li class="level1 item2"><a class="level1 item2" href="Course-Calendar"><span class="bg">Course Calendar</span></a></li>
+
+                            <li class="level1 item4"><a class="level1 item4" href="Career"><span class="bg">Career</span></a></li>
+
+                            <li class="level1 item6 last"><a class="level1 item6 last" href="Sitemap" target=""><span class="bg">Sitemap</span></a></li>
+                                                        
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="headerbar">
+                <div class="right">
+                    <div class="module mod-separator first last" >
+                        <div id="searchBox">
+                        <script>
+  (function() {
+    var cx = '012549914366354213984:7s2qyw2-9dk';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+                        </div>
+                        <div class="socialNetwork">
+                        	
+                        	<div id="loginButton">Login |</div>                        	
+                        	<a href="https://www.facebook.com/pages/Maestro-Intelligence-Lab/757612267607064" target="_new"><div class="social facebook"></div></a>
+                        	<a href="https://twitter.com/Maestrointel1" target="_new"><div class="social twitter"></div></a>
+                        	<a href="https://plus.google.com/116715110646089229516/about" target="_new"><div class="social google"></div></a>
+                        	<a href="http://www.linkedin.com/company/maestro-intelligence-lab?trk=biz-companies-cym" target="_new"><div class="social rss"></div></a>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="menubar">
+                <div class="menubar-1"></div>
+            </div>
+
+            <div id="logo">
+                <p><a href="home"><img border="0" class="correct-png" src="images/logo.jpg" style="border: 0px none;"></a></p>
+            </div>
+
+            <div id="menu">
+                <ul class="menu menu-dropdown">
+
+                    <li class="level1  parent">
+                        <a class="level1 item2 parent" href="index.php"><span class="bg">Home</span></a>
+                    </li>
+
+                    <li class="level1 item3 parent hasOuter">
+                        <a class="level1 item3 parent noLink" ><span class="bg">IT Best Practices Training</span></a>
+                        
+                        <ul class="subOuter training">  <div>         
+                            <ul class="submenuMain">
+                                <li class="level3 item1 first"><a class="level3 item1 first noLink boldie" >IT SERVICE MANAGEMENT</a></li>
+                                <li class="level3 item1 first"><a class="level3 item1 first" href="best-practices.php?id=itil"> ITIL <sup>&reg;</sup></a></li>
+                                <li class="level3 item2"><a class="level3 item2" href="best-practices.php?id=iso"> ISO/IEC 20000</a></li>
+                                <br><br>
+                                <li class="level3 item1 first"><a class="level3 item1 first noLink boldie" >PROJECT MANAGEMENT</a></li>
+                                <li class="level3 item1 first"><a class="level3 item1 first" href="best-practices.php?id=capm">CAPM</a></li>
+                                <li class="level3 item3"><a class="level3 item3" href="best-practices.php?id=pmp">PMP <sup>&reg;</sup></a></li>
+                                <li class="level3 item3"><a class="level3 item3" href="best-practices.php?id=pgmp">PgMP <sup>&reg;</sup></a></li>
+                                <li class="level3 item2"><a class="level3 item2" href="best-practices.php?id=prince">PRINCE 2 <sup>&reg;</sup></a></li>
+                                <li class="level3 item3"><a class="level3 item3" href="best-practices.php?id=msp">MSP <sup>&reg;</sup></a></li>
+                                <!--<li class="level3 item3"><a class="level3 item3" href="best-practices.php?id=mop">MOP <sup>&reg;</sup></a></li>-->
+                                <li class="level3 item3"><a class="level3 item3" href="best-practices.php?id=p3o">P3O <sup>&reg;</sup></a></li>
+                               <!-- <li class="level3 item2"><a class="level3 item2" href="best-practices.php?id=cobit"> COBIT 5</a></li>
+                                <li class="level3 item2"><a class="level3 item2" href="best-practices.php?id=agile">Agile</a></li>
+                                <li class="level3 item2"><a class="level3 item2" href="best-practices.php?id=scrum">Scrum</a></li>
+                                <li class="level3 item2"><a class="level3 item2" href="best-practices.php?id=sigma">Six Sigma</a></li> -->
+                            </ul>           
+        
+                        <ul class="submenuMain">
+                                <li class="level3 item1 first"><a class="level3 item1 first noLink boldie" >AGILE & SCRUM METHODOLOGY</a></li>
+                                <li class="level3 item2"><a class="level3 item2" href="best-practices.php?id=agile">PMI ACP <sup>&reg;</sup></a></li>
+                                <li class="level3 item2"><a class="level3 item2" href="best-practices.php?id=scrum">Certified Scrum Master <sup>&reg;</sup></a></li>
+                                <li class="level3 item2"><a class="level3 item2" href="best-practices.php?id=agile2">Professional Agile & Scrum Training</a></li>
+                                <br>
+                                <li class="level3 item1 first"><a class="level3 item1 first noLink boldie" >IT Governance and Strategy</a></li>
+                                <li class="level3 item2"><a class="level3 item2" href="best-practices.php?id=cobit">COBIT<sup>&reg;</sup> 5</a></li>
+                                <br>
+                                <li class="level3 item1 first"><a class="level3 item1 first noLink boldie" >Quality Management</a></li>
+                                <li class="level3 item2"><a class="level3 item2" href="best-practices.php?id=yellow">Six Sigma Yellow Belt</a></li>
+                                <li class="level3 item2"><a class="level3 item2" href="best-practices.php?id=green">Six Sigma Green Belt</a></li>
+                                <li class="level3 item2"><a class="level3 item2" href="best-practices.php?id=black">Six Sigma Black Belt</a></li>
+                            </ul>   
+                        </div>                             
+                        </ul>
+                    </li>
+
+                    <li class="level1 item3 parent hasOuter">
+                        <a class="level1 item3 parent noLink" ><span class="bg"> TECHNOLOGY TRAINING</span></a>
+                        
+                        <ul class="subOuter Techtraining">  <div>         
+          
+                            <ul class="submenuMain">
+                                <li class="level3 item1 first"><a class="level3 item1 first noLink boldie" > TECHNOLOGY TRAINING</a></li>
+                                <li class="level3 item1 first"><a class="level3 item1 first" href="technology-training.php?id=Microsoft-Products">Microsoft Products</a></li>
+                                <li class="level3 item2"><a class="level3 item2" href="technology-training.php?id=Oracle-Technology">Oracle Technology</a></li>
+                                <li class="level3 item2"><a class="level3 item2" href="technology-training.php?id=IBM-Mainframe-Technologies">IBM Mainframe Technologies</a></li>
+                                <li class="level3 item2"><a class="level3 item2" href="technology-training.php?id=SAP-Modules">SAP Modules</a></li>
+                                <li class="level3 item3"><a class="level3 item3" href="technology-training.php?id=Database-Management">Database Management</a></li>
+                                <li class="level3 item2 last"><a class="level3 item2 last" href="technology-training.php?id=Scripting-languages">Scripting Languages</a></li>
+                                <li class="level3 item2 last"><a class="level3 item2 last" href="technology-training.php?id=Middleware-technologies">Middleware Technologies</a></li>
+                                <li class="level3 item2 last"><a class="level3 item2 last" href="technology-training.php?id=Business-intelligence">Business Intelligence</a></li>
+                                <li class="level3 item2 last"><a class="level3 item2 last" href="technology-training.php?id=Telecom-wireless-technologies">Telecom/Wireless Technologies</a></li>
+                                <li class="level3 item2 last"><a class="level3 item2 last" href="technology-training.php?id=Software-testing">Software Testing</a></li>
+                                <li class="level3 item2 last"><a class="level3 item2 last" href="technology-training.php?id=Embedded-systems">Embedded Systems</a></li> 	
+                            </ul>     
+                        </div>                             
+                        </ul>
+                    </li>
+
+                    <li class="level1 item3 parent hasOuter">
+                        <a class="level1 item3 parent noLink" ><span class="bg">Behavioural Training</span></a>
+                        
+                        <ul class="subOuter Behtraining">  <div>         
+          
+                            <ul class="submenuMain">
+                                <li class="level3 item1 first"><a class="level3 item1 first noLink boldie" > BEHAVIOURAL TRAINING</a></li>
+                                <li class="level3 item1 first"><a href="behavioral-training.php?id=leader" class="level3 item1 first">Leadership Training</a></li>
+                                <li class="level3 item2"><a href="behavioral-training.php?id=motiv"  class="level3 item2" >Motivational Training</a></li>
+                                <li class="level3 item2"><a  href="behavioral-training.php?id=team" class="level3 item2">Team Building</a></li>	
+                                <li class="level3 item2"><a href="behavioral-training.php?id=customer"  class="level3 item2">Customer Service</a></li>
+                                <li class="level3 item2"><a href="behavioral-training.php?id=bce"  class="level3 item2">Business Communication & Etiquettes</a></li>
+                            </ul>     
+                        </div>                             
+                        </ul>
+                    </li>
+                    <li class="level1 item3 parent hasOuter">
+                        <a class="level1 item3 parent noLink" ><span class="bg">Services Portfolio</span></a>
+                        
+                        <ul class="subOuter services">  <div>         
+       
+                            <ul class="submenuMain">
+                                <li class="level3 item1 first"><a class="level3 item1 first noLink boldie" > CONSULTING SERVICES</a></li>
+                                <li class="level3 item1 first"><a class="level3 item1 first" href="consulting-services.php?id=itil">ITIL Process Implementation</a></li>
+                                <li class="level3 item2"><a class="level3 item2" href="consulting-services.php?id=itil">ISO/IEC 20000 </a></li>
+                                <li class="level3 item2"><a class="level3 item2" href="consulting-services.php?id=itil">ISMS</a></li>
+                                <li class="level3 item2 last"><a class="level3 item2 last" href="consulting-services.php?id=itil"> Project Management</a></li>
+                            </ul>       
+                            <ul class="submenuMain">
+                                <li class="level3 item1 first"><a class="level3 item1 first noLink boldie" >OUTSOURCING SERVICES</a></li>
+                                <li class="level3 item2"><a class="level3 item2" href="outsourcing-services.php?id=why">Why Outsourcing</a></li>
+                                <li class="level3 item2"><a class="level3 item2" href="outsourcing-services.php?id=techsol">Technology Solutions</a></li>
+                                <li class="level3 item2"><a class="level3 item2" href="outsourcing-services.php?id=infman">Infrastructure Management</a></li>
+                                <li class="level3 item1 first"><a class="level3 item1 first" href="outsourcing-services.php?id=staff">Staff Augmentation</a></li>
+                                <li class="level3 item2"><a class="level3 item2" href="outsourcing-services.php?id=green">Green IT</a></li>
+                            </ul>     
+                        </div>                             
+                        </ul>
+                    </li>
+
+
+                  <!--  <li class="level1  parent">
+                        <a class="level1 item2 parent" href="Course-Catalogue.php"><span class="bg">Course Catalogue</span></a>
+                    </li> -->
+                    <li class="level1  parent">
+                        <a class="level1 item2 parent" href="behavioral-training.php?id=lms"><span class="bg">LMS</span></a>
+                    </li>
+
+                    <li class="level1 item3 parent hasOuter">
+                        <a class="level1 item3 parent noLink" ><span class="bg">Resources</span></a>
+                        
+                        <ul class="subOuter res">  <div>         
+          
+                            <ul class="submenuMain">
+                                <li class="level3 item1 first"><a class="level3 item1 first noLink boldie" >Resources</a></li>
+                                <li class="level3 item1 first"><a href="Resources.php?id=trainers" class="level3 item1 first">Trainers Panel</a></li>
+                                <li class="level3 item1 first"><a href="Resources.php?id=sample" class="level3 item1 first">Sample Tests</a></li>
+                                <!--<li class="level3 item2"><a href="Resources.php?id=sheet"  class="level3 item2" >Course Fact Sheets</a></li>-->
+                                <li class="level3 item2"><a href="Course-Catalogue"  class="level3 item2" >Course Catalogue</a></li>
+                                <li class="level3 item2"><a href="Resources.php?id=broc" class="level3 item2">Brochures</a></li>	
+                            </ul>     
+                        </div>                             
+                        </ul>
+                    </li>
+
+                    
+                </ul>
+            </div>
+        </div><!-- header end --><div class="middle-wrapper">
+    <div class="bannerPart">
+        <div class="threefour">
+            <div id='slider' class='swipe'>
+            <div class='swipe-wrap'>
+                <div style="background:url('images/banner1.jpg');">
+                    
+                </div>
+                <div style="background:url('images/banner2.jpg');">
+                    
+                </div>
+                <div style="background:url('images/banner3.jpg');">
+                    
+                </div>
+              <!--  <div style="background:url('images/banner4.jpg');">
+                    
+                </div>-->
+            </div>
+            </div>
+
+        </div>
+        <div class="onefour">
+        	<ul class="sideMenu first">
+                <li><a href="Course-Calendar.php">Course Calendar</a></li>
+                <li id="register"><a href="#">Register Now</a></li>
+        		<li id="callback"><a href="#">Request A Call Back</a></li>
+        		<li id="livechat"><a href="#">Live Chat</a></li>
+        		<li><a href="Customer-Support">Customer Support</a></li>
+        		<li><a href="Partner-With-Us">Partner With Us</a></li>
+        	</ul>
+        </div>
+    </div>            
+</div>
+<div class="middle-wrapper indexpage">
+        <div class="onefour">
+            <ul class="sideMenu second">
+                <li class="noHover"><a href="#" class="category">CATEGORIES</a></li>
+                <li class="hasSub">
+	        	<a >IT Service Management</a>
+	                     <ul class="sideSub">
+	                        <li><a href="best-practices.php?id=itil">ITIL<sup>&reg;</sup></a> </li>
+	                        <li><a href="best-practices.php?id=iso">ISO/IEC 20000</a> </li>
+	                    </ul>
+                 </li>
+                <li class="hasSub">
+	        	<a >Project Management</a>
+	                     <ul class="sideSub">
+	                        <li><a href="best-practices.php?id=capm">CAPM<sup>&reg;</sup></a> </li>
+	                        <li><a href="best-practices.php?id=pmp">PMP<sup>&reg;</sup></a> </li>
+	                        <li><a href="best-practices.php?id=pgmp">PgMP<sup>&reg;</sup></a> </li>
+	                        <li><a href="best-practices.php?id=prince">PRINCE<sup>&reg;</sup> 2</a> </li>
+	                        <li><a href="best-practices.php?id=msp">MSP <sup>&reg;</sup></a> </li>
+	                       <!-- <li><a href="best-practices.php?id=mop">MOP <sup>&reg;</sup></a> </li>-->
+	                        <li><a href="best-practices.php?id=p3o">P3O <sup>&reg;</sup></a> </li>
+	                    </ul>
+                 </li>
+                <li class="hasSub">
+	        	<a >IT Governance & Strategy</a>
+	                     <ul class="sideSub">
+	                        <li><a href="best-practices.php?id=cobit">COBIT<sup>&reg;</sup> 5</a> </li>		                        
+	                    </ul>
+                 </li>
+                <li class="hasSub">
+	        	<a >AGILE & SCRUM Methodology</a>
+	                     <ul class="sideSub">
+	                        <li><a href="best-practices.php?id=agile">PMI ACP<sup>&reg;</sup></a> </li>
+	                        <li><a href="best-practices.php?id=scrum">Certified Scrum Master<sup>&reg;</sup></a> </li>
+	                        <li><a href="best-practices.php?id=agile2">Professional Agile & Scrum Training</a> </li>	                        
+	                    </ul>
+                 </li>
+             <li class="hasSub">
+	        	<a >Quality Management</a>
+	                     <ul class="sideSub">
+	                        <li><a href="best-practices.php?id=yellow">Six Sigma Yellow Belt</a> </li>	 
+	                        <li><a href="best-practices.php?id=green">Six Sigma Green Belt</a> </li>	 
+	                        <li><a href="best-practices.php?id=black">Six Sigma Black Belt</a> </li>	                        
+	                    </ul>
+                 </li>
+
+
+            </ul>
+        <div class="minCal">
+
+   Calendar Loading...
+
+    
+</div>
+<br><br>
+<script>
+$(document).ready(function(){
+	var page;
+	$.get('Course-Calendar.php', null, function(wholePage){
+		page = wholePage;
+		$Courses = $(page).find('.row.value');		
+		content = '';
+		for(i=0;i<$Courses.length;i++) {
+			course = $Courses[i];
+			dateObject = $(course).children('.Date').html().split('\'');
+			cDate = (dateObject[0]);
+			cDate = cDate.replace('&amp;','<br>&<br>');
+
+			cMonth = '2014';
+			cCourse = $(course).children('.Registration').attr('data-course');
+			cLocation = $(course).children('.Location').html();
+			cPrice = $(course).children('.Price').html();
+			content+= '<div class="slide one"><div class="calLeft"><p class="date">'+cDate+'</p><p class="month">'+cMonth+'</p></div><div class="calRight"><p class="course">'+cCourse+'</p><p class="place">'+cLocation+'</p><p class="price">'+cPrice+'</p><p><a class="reg" href="Course-Calendar.php">Register</a></p></div></div>';		
+		}
+		$('.minCal').html(content);
+		var myVar=setInterval(function(){startSlide()},4000);
+	});
+});
+
+function startSlide(element){
+    var value = $('.minCal > .slide:first-child').clone();
+    $('.minCal > .slide:first-child').slideUp();
+	$('.minCal').append(value);
+	value = '';
+	setTimeout(function(){$('.minCal > .slide:first-child').remove()},1000);
+    
+    
+}
+</script>
+        </div>
+        <div class="threefour">
+            <div class="flipcards">
+            <h1>Choose Your Career Path</h1>
+                    <div id="f1_container">
+                        <div id="f1_card" class="shadow">
+                            <div class="front face">
+                                <img src="images/itil1.jpg">
+                            </div>
+                            <div class="back face center">
+                           	<div>
+                           	<h3>Upcoming Training</h3>
+                           	    <h4>ITIL<sup>&reg;</sup> 2011 Foundation</h4>
+	                            <p class="flipPlace">Bangalore - 12 & 13 July<br>Delhi - 19 & 20 July<br>Mumbai- 26 & 27 July<br></p>
+	                           <!-- <p class="flipDate">May 10 & 11, 2014<br>May 17 & 18, 2014</p>-->
+	                            <p class="flipPrice">Rs. 16,999</p>
+	                            <p><a href="Course-Calendar" id="EnrollNow">Enroll Now</a></p>
+	                        </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="f1_container">
+                        <div id="f1_card" class="shadow">
+                            <div class="front face">
+                                <img src="images/itil2.jpg">
+                            </div>
+                            <div class="back face center">
+                           	<div>
+                           	    <h3>Upcoming Training</h3>
+                           	    <h4>COBIT <sup>&reg;</sup> 5</h4>
+	                            <p class="flipPlace">Bangalore - 19 & 20 July<br>Mumbai - 26 & 27 July
+	                            <p class="flipPrice">Rs. 25,500</p>
+	                            <p><a href="Course-Calendar" id="EnrollNow">Enroll Now</a></p>
+	                        </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="f1_container">
+                        <div id="f1_card" class="shadow">
+                            <div class="front face">
+                                <img src="images/itil3.jpg">
+                            </div>
+                            <div class="back face center">
+                           	<div>
+                           	    <h3>Upcoming Training</h3>
+                           	    <h4>PRINCE<sup>&reg;</sup> 2</h4>
+	                            <p class="flipPlace">Pune - 17 to 20 July<br>Bangalore - 24 to 27 July<br>Delhi- 24 to 27 July</p> 
+	                            <p class="flipPrice">Rs. 36,500</p> 
+	                            <p><a href="Course-Calendar" id="EnrollNow">Enroll Now</a></p>
+	                        </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="f1_container">
+                        <div id="f1_card" class="shadow">
+                            <div class="front face">
+                                <img src="">
+                            </div>
+                            <div class="back face center">
+                           	<div>
+                           	    <h3>Upcoming Training</h3>
+                           	    <h4>PMP<sup>&reg;</sup></h4>
+	                            <p class="flipPlace">Pune - 24 to 27 July<br>Bangalore - 17 to 20 July</p> 
+	                            <p class="flipPrice">Rs. 15,000</p><br><br>
+	                            <p><a href="Course-Calendar" id="EnrollNow">Enroll Now</a></p>
+	                        </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="f1_container">
+                        <div id="f1_card" class="shadow">
+                            <div class="front face">
+                                <img src="41LARKvjcYL._AC_SR160,160_.jpg">
+                            </div>
+                            <div class="back face center">
+                           	<div>
+                           	    <h3>Upcoming Training</h3><p>Will be updated shortly<!--
+	                            <p class="flipPlace">Bangalore, Noida, Pune, Hyderabad, Chennai</p>
+	                            <p class="flipDate">May 10 & 11, 2014<br>May 17 & 18, 2014</p>
+	                            <p class="flipPrice">Rs. 25,000</p>
+	                            <p><a href="Course-Calendar" id="EnrollNow">Enroll Now</a></p>-->
+	                        </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="f1_container">
+                        <div id="f1_card" class="shadow">
+                            <div class="front face">
+                                <img src="images/itil6.jpg">
+                            </div>
+                            <div class="back face center">
+                           	<div>
+                           	    <h3>Upcoming Training</h3><p>Will be updated shortly<!--
+	                            <p class="flipPlace">Bangalore, Noida, Pune, Hyderabad, Chennai</p>
+	                            <p class="flipDate">May 10 & 11, 2014<br>May 17 & 18, 2014</p>
+	                            <p class="flipPrice">Rs. 25,000</p>
+	                            <p><a href="Course-Calendar" id="EnrollNow">Enroll Now</a></p>-->
+	                        </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+        </div>
+    </div>            
+
+
+</div>
+
+
+    <div id="footer">
+        <div class="wrapper">
+            <div class="onethree legal">
+                <h2>LEGAL</h2>
+                <ul>
+                	<li><a href="legal.php?id=terms">Terms of Use</a></li>
+                	<li><a href="legal.php?id=privacy">Privacy Policy</a></li>
+                	<li><a href="legal.php?id=rescheduling">Rescheduling and Refund Policy</a></li>
+                </ul>
+            </div>
+            <div class="onethree subscribe">
+                <h2>Subscribe with Us</h2>
+                <input type="text" placeholder="Enter Your Email & Press Enter" id="subscribe">
+                <p>Subscribe to our newsletter to recieve quick updates about your favourite exams. We respect your privacy and your email address will not be shared with any other parties. Read our <a href="#">Privacy Policy</a> for more information.</p>
+
+            </div>
+            <!--div class="onethree thirdPart">
+                <h2>Testimonials</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              
+            </div-->
+            <div class="IconsMatter">
+            	<div class="one">
+            		<p>Paypal</p>
+            		<img src ="images/paypal.png">            		
+            	</div>
+            	<div class="two">
+            		<p>All Major Cards Accepted</p>
+            		<img src ="images/all.gif">            		
+            	</div>
+            	<div class="three">
+            		<p>Wire Transfer</p>
+            		<img src ="images/wire.jpg">            		
+            	</div>
+            	<div class="four">
+            		<p>Cheque</p>
+            		<img src ="images/cheque.jpg">            		
+            	</div>
+            	<div class="five">
+            		<p>100% Secure</p>
+            		<img src="images/secure.gif" style="width: 158px;">           		
+            	</div>
+            </div>
+        </div>
+    </div><!-- footer end -->
+    <div id="blackfooter">
+        <div class="wrapper disclaimer">
+		<b>Disclaimer:</b><br><br>
+"ITIL<sup>&reg;</sup> is a registered trade mark of AXELOS Limited, used under permission of AXELOS Limited. All rights reserved."<br>
+
+"M_o_R<sup>&reg;</sup> is a registered trade mark of AXELOS Limited, used under permission of AXELOS Limited. All rights reserved."<br>
+
+"MoP<sup>&reg;</sup> is a registered trade mark of AXELOS Limited, used under permission of AXELOS Limited. All rights reserved."<br>
+
+"MoV<sup>&reg;</sup> is a registered trade mark of AXELOS Limited, used under permission of AXELOS Limited. All rights reserved."<br>
+
+"MSP<sup>&reg;</sup> is a registered trade mark of AXELOS Limited, used under permission of AXELOS Limited. All rights reserved."<br>
+
+"P3O<sup>&reg;</sup> is a registered trade mark of AXELOS Limited, used under permission of AXELOS Limited. All rights reserved."<br>
+
+"P3M3<sup>&reg;</sup> is a registered trade mark of AXELOS Limited, used under permission of AXELOS Limited. All rights reserved."<br>
+
+"PRINCE2<sup>&reg;</sup> is a registered trade mark of AXELOS Limited, used under permission of AXELOS Limited. All rights reserved."<br>
+
+"PRINCE2 Agile<sup>&reg;</sup> is a registered trade mark of AXELOS Limited, used under permission of AXELOS Limited. All rights reserved."<br>
+
+"RESILIA<sup>TM</sup> is a trade mark of AXELOS Limited, used under permission of AXELOS Limited. All rights reserved."<br>
+
+"The Swirl Logo<sup>TM</sup> is a trade mark of AXELOS Limited, used under permission of AXELOS Limited. All rights reserved."<br>
+        </div>
+        
+		<p class="copyright">&copy; 2014 | All Rights Reserved | Maestro Intelligence Lab</p>
+    </div>
+</body>
+
+
+<script>
+window.mySwipe = new Swipe(document.getElementById('slider'), {
+  speed: 800,
+  auto: 4500,
+  continuous: true,
+  disableScroll: false,
+  stopPropagation: false,
+  callback: function(index, elem) {},
+  transitionEnd: function(index, elem) {}
+});
+</script>
+</html>
+<!--Start of Zopim Live Chat Script-->
+<script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+$.src="//v2.zopim.com/?2yPM1U86ucobw68p4xhtqgEhNvtvvMH1";z.t=+new Date;$.
+type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+</script>
+<!--End of Zopim Live Chat Script-->
